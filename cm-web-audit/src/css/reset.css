@@ -1,0 +1,225 @@
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt, 
+em, embed,
+fieldset, figcaption, figure, font, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd, 
+keygen,
+label, legend, li, 
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, 
+var{
+    background: transparent;
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+    vertical-align: top; }
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table, table td { 
+	padding:0;
+	border:none;
+	border-collapse:collapse;
+}
+img {
+	vertical-align:top; 
+}
+embed { 
+	vertical-align:top;
+}
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 1000px;
+	font-size:.8125em;
+}
+
+
+.wrapper { 
+	width:100%;
+	overflow:hidden;
+}
+
+/* The inside class provides consistent padding. To be used often! */
+.inside{ padding: 32px 37px 50px 37px; }
+
+/*----- other -----*/
+figure { margin-bottom:18px;}
+
+.img-indent { 
+	margin:0 20px 0 0; 
+	float:left;
+}
+.img-box { 
+	width:100%; 
+	overflow:hidden; 
+	padding-bottom:15px;
+}
+	.img-box figure { 
+		float:left; 
+		margin:0 20px 0 0;
+		padding:0;
+	}
+
+.extra-wrap { 
+	overflow:hidden;
+}
+
+
+.main-box {
+	border-top:5px solid #eaeaea;
+	background:#fff;
+	width:100%;
+}
+
+
+
+
+/*===== gallery =====*/
+.roundabout-holder  { 
+	width:850px;
+	height:496px;
+	margin:0 auto;
+}
+.roundabout-moveable-item {
+   width: 646px;
+   height: 416px;
+   cursor: pointer;
+	 border:3px solid #ccc;
+	 border:3px solid rgba(0, 0, 0, 0.08);
+   border-radius:4px;
+	 -moz-border-radius:4px;
+	 -webkit-border-radius:4px;
+}
+	.roundabout-moveable-item img{
+		width:100%;
+	}
+.roundabout-in-focus {
+	border:3px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/*===== content =====*/
+#content {
+	
+}
+	#content img, aside img {
+		border:3px solid #ebebeb;
+		border-radius:4px;
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+	}
+	#content img:hover {
+		border-color:#bbb;
+	}
+	
+
+/*--- news list styles ---*/
+	.news li {
+		overflow:hidden;
+		position:relative;
+		padding:0 0 26px 84px;
+	}
+	.news li:last-child {
+		padding-bottom:0;
+	}
+	
+		.news li figure {
+			width:59px;
+			height:59px;
+			/* background:url(../images/date-bg1.gif) no-repeat 0 0; */
+			position:absolute;
+			left:0;
+			top:0;
+			text-align:center;
+			border:3px solid #ebebeb;
+			border-radius:4px;
+			-moz-border-radius:4px;
+			-webkit-border-radius:4px;
+			font-size:10px;
+			color:#fff;
+			text-transform:uppercase;
+		}
+			.news li figure strong {
+				display:block;
+				font-size:30px;
+				line-height:1.2em;
+				margin-bottom:-7px;
+				padding-top:4px;
+			}
+		
+		/* .news li:nth-of-type(4n+2) figure {
+			background:url(../images/date-bg2.gif) no-repeat 0 0;
+		}
+		.news li:nth-of-type(4n+3) figure {
+			background:url(../images/date-bg3.gif) no-repeat 0 0;
+		}
+		.news li:nth-of-type(4n+4) figure {
+			background:url(../images/date-bg4.gif) no-repeat 0 0;
+		} */
+
+
+
+
+.team-list li {
+	width:100%;
+	overflow:hidden;
+	padding-bottom:43px;
+}
+.team-list li:last-child {
+	padding-bottom:0;
+}
+	.team-list li figure {
+		float:left;
+		margin:0 20px 0 0;
+		padding:0;
+	}
+
+
+/*--- loopedSlider styles ---*/
+/*
+ * Required 
+*/
+#loopedSlider .wrap { width:295px; height:295px; overflow:hidden; position:relative;}
+#loopedSlider .slides { position:absolute; top:0; left:0; }
+#loopedSlider .slides div { position:absolute; top:0; width:295px; display:none; }
+/*
+ * Optional
+*/
+#loopedSlider { width:295px; position:relative; clear:both; }
+#loopedSlider .nav-controls {
+	width:100%;
+	overflow:hidden;
+	padding-top:10px;
+}
+#loopedSlider li {
+	display:inline;
+}
+#loopedSlider li a.previous {
+	float:left;
+}
+#loopedSlider li a.next {
+	float:right;
+}
